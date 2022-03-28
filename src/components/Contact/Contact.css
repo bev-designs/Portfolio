@@ -1,0 +1,101 @@
+.contactContainer {
+    background: #151515;
+    color: rgb(252, 240, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em 0;
+}
+
+.containerWrapper{
+    display: flex;
+    padding: 5em 0;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+.iconSection{ 
+    background: #181818;
+    display: flex;
+    padding: 20px;
+    margin: 1em 0;
+    border-right: .2rem solid grey;
+    border-radius: 0 0 10px 10px;
+    gap: 2em;
+    text-align: justify;
+    box-shadow: 4px 4px 4px black;
+    
+}
+.info{
+    width:12rem;
+    text-align: left;
+}
+ion-icon{
+    background: #151515;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: -1;
+}
+
+.formSection{ 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 0 3vmax;
+    border-left: .2rem solid grey;
+
+}
+input{
+    background: #181818;
+    color: rgb(252, 240, 225);
+    width: 18rem;
+    padding: 15px;
+    margin: 1em 0;
+    border: none;
+    border-bottom: .2rem solid grey;
+    border-radius: 0 0 5px 5px;
+    outline: none;
+}
+textarea,
+.send{
+    background: #181818;
+    color: rgb(252, 240, 225);
+    width: 18rem;
+    padding: 15px;
+    margin: 1em 0;
+    border: none;
+    border-bottom: .2rem solid grey;
+    border-radius: 5px;
+    outline: none;
+
+}
+label{
+    width: 18rem;
+}
+.formSuccess{
+    padding: 0 3vmax;
+    border-left: .2rem solid grey;
+    text-align: center;
+}
+
+.errorP{
+    color: red;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 780px) {
+    .formSection{ 
+       
+        border: none;
+    
+    }
+    .iconSection{ 
+        padding: 15px;
+        margin: 1em 0;
+       
+    }
+    .formSuccess{
+        border: none;
+    }
+}

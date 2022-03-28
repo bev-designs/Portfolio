@@ -1,0 +1,13 @@
+.serv{
+    padding: 5rem;
+    @media(max-width: 768px) {
+        padding: 5rem 1rem;
+    }
+}
+.services:hover {
+    transform: scale(1.1);
+    color: rgb(236, 228, 228);
+    @media(max-width: 768px) {
+        transform: scale(1);
+    }
+}

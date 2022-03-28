@@ -1,0 +1,25 @@
+a ion-icon:hover {
+    font-size: 4rem;
+}
+.socials {
+    width: 70%;
+    
+}
+.links a ion-icon:hover {
+    transform: scale(1.2);
+    
+}
+
+@media screen and (max-width:780px) {
+    .links {
+       display: flex;
+    }
+
+    .socials {
+         width: 100%
+    }
+    .footer {
+        padding: 4rem 0;
+    }
+
+}

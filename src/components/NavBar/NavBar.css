@@ -1,0 +1,98 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background: #151515;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    border-bottom: .1rem solid;
+  
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width:75vmax;
+}
+.logo{
+    font-size:23px;
+    color: rgb(252, 240, 225);
+    text-shadow: 4px 4px 4px rgb(43, 43, 43);
+}
+.home,
+.about,
+.contact,
+.projects {
+    color: rgb(252, 240, 225);
+    text-decoration: none;
+    text-shadow: 4px 4px 4px rgb(43, 43, 43);
+    padding: 10px 20px;
+    margin:0 10px;
+    
+}
+.home:hover,
+.about:hover,
+.contact:hover,
+.projects:hover {
+    color: grey;
+    
+}
+.active-link{
+    border-bottom: .1rem solid;
+}
+
+.mobile-view{
+    display:none;
+}
+@media screen and (max-width: 900px) {
+    .logo{
+        display:flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block; 
+        list-style: none;
+        left: 0;
+        top: 75px;
+        background: #151515;;
+        transition: all 0.5s ease-out;
+        width:100%;
+        z-index: 1;
+    }
+    .home,
+    .about,
+    .contact,
+    .projects {
+        transition: all 0.5s ease;
+        width:100%;
+        padding: 32px;
+        text-align: center;
+    }
+    .mobile-view{
+        display:block;
+        position: absolute;
+        background: #151515;
+        font-size: 2rem;
+        color: rgb(252, 240, 225);
+        outline: none;
+        border: none;
+        top: 15px;
+        right: 25px;
+        
+    }
+    .active-link{
+        border: none;
+        color: grey;
+    }
+
+}  

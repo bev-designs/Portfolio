@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,700;1,400&display=swap');
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sarabun, sans-serif;
+}
+.aboutPage{
+   background: #151515;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0; 
+    color: rgb(252, 240, 225);
+}
+h1{
+    color: rgb(252, 240, 225);
+}
+
+.aboutWrapper{
+    display: flex;
+    padding: 5vmax;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.aboutWrap{
+    background: #292222;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 4px black;
+}
+.aboutTerminal{
+    display: flex;
+    padding: .4vmax; 
+    
+}
+.terminal{
+    display: flex;
+    margin: 0;
+    
+}
+.dotRed{
+    background :red;
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%; 
+    margin: 0 0 0 .3vmax;
+}
+.dotYellow{
+    background :rgb(175, 175, 1);
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%; 
+    margin: 0 0 0 .3vmax;
+}
+.dotGreen{
+    background :green;
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%; 
+    margin: 0 0 0 .3vmax;
+
+}
+.fileName{
+    color: aliceblue; 
+  
+}
+.aboutInfo{
+    padding:2vmax 2vmax 3vmax 5vmax;
+  
+}
+.zero {
+    color: rgb(159, 192, 42);
+}
+.one {
+    color: rgb(71, 101, 250);
+    margin: 0 0 0 2rem;
+}
+
+.two {
+    color: rgb(240, 34, 68);
+}
+
+.three {
+    color: rgb(108, 179, 101);
+    
+}
+.aboutText{
+    display: flex; 
+    max-width: 600px;
+    flex-wrap: wrap;
+   
+}
+.aboutParagOne{
+    text-align: justify; 
+    color: rgb(252, 240, 225);
+    margin: 2rem 0;
+}
+.aboutParagTwo{
+    text-align: justify; 
+    color: rgb(252, 240, 225);
+    margin: 2rem 0;
+
+}
+.aboutImage{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    color: rgb(252, 240, 225);
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+h5{
+    margin: 0 0 0 2vmax; 
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.image{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    gap:1rem
+
+}
+
+@media screen and (max-width: 1030px) {
+   
+    .aboutText{
+        width: 100%;
+        padding: 0;  
+    }
+
+}

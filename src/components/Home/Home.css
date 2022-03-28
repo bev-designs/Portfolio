@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,700;1,400&display=swap'); 
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sarabun, sans-serif;
+}
+.homeContainer {
+    background: #151515;
+    color: rgb(252, 240, 225);
+    display: flex;
+   
+}
+.homeWrapper{
+    width: 50%;
+    display: flex;
+    padding: 10rem;
+   
+}
+.homeImage{ 
+    width: 40%;
+   
+}
+.homeInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.cvButton{
+    background: none;
+    padding: 15px;
+    color: rgb(129, 118, 103); 
+    border: .1em solid grey;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cvButton:hover {
+    background: #101010; 
+    color:rgb(252, 240, 225)
+
+}
+
+.bevImage{
+    width: 20em;
+    border: .2rem solid rgb(212, 201, 188);
+    background: rgb(146, 92, 92); 
+    opacity: .8;
+    border-radius: 50%;
+}
+.bevImage:hover{
+    opacity: .8;
+}
+
+@media screen and (max-width: 1220px) {
+    .homeWrapper{
+        padding: 5rem;
+      
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .homeContainer {
+        flex-direction: column;
+    }
+    .homeInfo{
+        width: 90%;
+       
+    }
+    .homeWrapper{
+        width: 100%;
+        display: flex;
+        padding: 5rem 1rem;
+      
+    }
+    .homeImage{ 
+        width: 70%;
+        text-align: center;
+        margin-Bottom: 3rem;
+    
+    }
+
+}
